@@ -1,10 +1,14 @@
 import { Button as ButtonNativeBase, Text } from 'native-base';
 
-export function Button() {
+interface ButtonProps {
+  title: string;
+}
+
+export function Button({ title }: ButtonProps) {
   return (
     <ButtonNativeBase>
       <Text>
-        ENTRAR COM O GOOGLE
+        {title}
       </Text>
     </ButtonNativeBase>
   )
