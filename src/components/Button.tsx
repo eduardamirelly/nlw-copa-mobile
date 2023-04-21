@@ -1,6 +1,6 @@
-import { Button as ButtonNativeBase, Text } from 'native-base';
+import { Button as ButtonNativeBase, IButtonProps, Text } from 'native-base';
 
-interface ButtonProps {
+interface ButtonProps extends IButtonProps {
   title: string;
 }
 
