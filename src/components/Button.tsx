@@ -22,7 +22,11 @@ export function Button({ title, type = 'PRIMARY', ...rest }: ButtonProps) {
       }}
       {...rest}
     >
-      <Text>
+      <Text
+        fontSize="sm"
+        fontFamily="heading"
+        color={type === 'SECONDARY' ? 'white' : 'black'}
+      >
         {title}
       </Text>
     </ButtonNativeBase>
