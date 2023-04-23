@@ -1,4 +1,4 @@
-import { Center, Icon } from "native-base";
+import { Center, Icon, Text } from "native-base";
 import { Button } from "../components/Button";
 
 import { Fontisto } from '@expo/vector-icons';
@@ -15,6 +15,10 @@ export function SignIn() {
         leftIcon={<Icon as={Fontisto} name="google" color="white" size="md" />}        
         type="SECONDARY"
       />
+
+      <Text>
+        Não utilizamos nenhuma informação além do seu e-mail para criação de sua conta.
+      </Text>
     </Center>
   )
 }
