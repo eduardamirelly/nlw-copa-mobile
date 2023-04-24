@@ -7,6 +7,7 @@ interface UserProps {
 
 export interface AuthContextDataProps {
   user: UserProps;
+  signIn: () => Promise<void>;
 }
 
-export const AuthContext = createContext({});
+export const AuthContext = createContext({} as AuthContextDataProps);
