@@ -12,7 +12,7 @@ export interface AuthContextDataProps {
 
 export const AuthContext = createContext({} as AuthContextDataProps);
 
-export function AuthContextProvider() {
+export function AuthContextProvider({ children }) {
 
   async function signIn() {
 
@@ -26,7 +26,7 @@ export function AuthContextProvider() {
         avatarUrl: 'https://github.com/eduardamirelly.png',
       }
     }}>
-
+      {children}
     </AuthContext.Provider>
   );
 }
